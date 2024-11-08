@@ -1,6 +1,3 @@
-Thanks for downloading this template!
-
-Template Name: Append
-Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-Author: BootstrapMade.com
+Thanks for using this website
+name : Samuel
 License: https://bootstrapmade.com/license/
