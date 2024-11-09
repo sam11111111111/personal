@@ -2918,7 +2918,7 @@ section,
   // }
 }
 
-span {
+#sam {
   --offset: 2;
   position: absolute;
   color: #ffcc00;
