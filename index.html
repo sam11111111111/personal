@@ -90,13 +90,26 @@
             <p data-aos="fade-up" data-aos-delay="200">HI <i class="bi bi-emoji-smile-fill"></i> i am samuel  </p>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
-
-       <form action="https://formspree.io/f/xnnqvqza" method="post" >
+<!-- xnnqvqza -->
+       <form action="https://formspree.io/f/" method="post" target="hidden_iframe" onsubmit="showThankYouMessage()" id="subscribeForm">
               <div class="sign-up-form"><input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe"></div>
              
             </form>
 
-</form>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<div id="thankYouMessage" style="display:none;">
+  <h3 style="color: whitesmoke; margin-top: 10px;">    Thank you for subscribing! </h3>
+</div>
+
+<script>
+    function showThankYouMessage() {
+        // Prevents the form from redirecting the user to Formspree's default thank-you page
+        setTimeout(function() {
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("subscribeForm").reset(); // Clears the form
+        }, 200); // Adjust the delay if necessary
+    }
+</script>
 
 
           </div>
@@ -643,7 +656,8 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
           </div>
 
           <div class="col-lg-6">
-            <form action="https://formspree.io/f/xnnqvqza" method="post"  data-aos="fade-up" data-aos-delay="20">
+
+            <form action="https://formspree.io/f/" method="post"  data-aos="fade-up" data-aos-delay="20" target="hidden_iframe_one" onsubmit="YouMessage()" id="subForm">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -666,8 +680,33 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
                   <button type="submit">Send Message</button>
                 
 
-              </div>
+               </div>
+
+
+
+
+
+
             </form>
+
+
+
+<iframe name="hidden_iframe_one" style="display:none;"></iframe>
+<div id="YouMessage" style="display:none;">
+  <h3 style="color: lightgreen; margin-top: 10px;">    Thank you! it'll  </h3>
+</div>
+
+<script>
+    function YouMessage() {
+        // Prevents the form from redirecting the user to Formspree's default thank-you page
+        setTimeout(function() {
+            document.getElementById("YouMessage").style.display = "block";
+            document.getElementById("subForm").reset(); // Clears the form
+        }, 200); // Adjust the delay if necessary
+    }
+</script>
+
+
           </div><!-- End Contact Form -->
 
         </div>
