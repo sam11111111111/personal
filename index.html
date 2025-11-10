@@ -89,13 +89,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to My Website</h2>
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to My<span data-flicker="i" contenteditable id="web" aria-hidden="true">Website </span> </h2>
             <p data-aos="fade-up" data-aos-delay="200">HI <i class="bi bi-emoji-smile-fill"></i> i am samuel  </p>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
 <!--  -->
        <form action="https://formspree.io/f/xnnqvqza" method="post" target="hidden_iframe" onsubmit="showThankYouMessage()" id="subscribeForm">
-              <div class="sign-up-form"><input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe"></div>
+              <div class="sign-up-form"><input type="email" name="email" placeholder="Email" required><input type="submit" value="Subscribe"></div>
              
             </form>
 
@@ -110,7 +110,7 @@
         setTimeout(function() {
             document.getElementById("thankYouMessage").style.display = "block";
             document.getElementById("subscribeForm").reset(); // Clears the form
-        }, 200); // Adjust the delay if necessary
+        }, 1200); // Adjust the delay if necessary
     }
 </script>
 
@@ -194,7 +194,7 @@ My journey began with a love for coding and evolved into building tools that mak
     <!-- Stats Section -->
     <section id="stats" class="stats section dark-background">
 
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/sk.png" alt="" data-aos="fade-in">
 
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
@@ -258,14 +258,17 @@ My journey began with a love for coding and evolved into building tools that mak
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            <img src="assets/img/referee.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
 
      <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/K.png" class="img-fluid" alt="">
+            <img src="assets/img/attendance.png" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
+    <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/attendance (1).png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
 
 
 
@@ -352,13 +355,35 @@ My journey began with a love for coding and evolved into building tools that mak
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-calculator"></i></div>
+              <div class="icon flex-shrink-0"><i class="bi bi-calendar-day"></i></div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Scientific Calculator</a></h4>
-                <p class="description">A versatile scientific calculator designed for complex calculations, supporting functions like trigonometry, logarithms, exponents, and more, making it ideal for advanced mathematical and scientific problem-solving. </p>
+                <h4 class="title"><a href="#" class="stretched-link">ESOApp <br> 🧾 Attendance Recorder (Admin App)</a></h4>
+                <p class="description">A lightweight web application that allows administrators to add workers, record daily attendance, and manage worker data in real time. The app uses Firebase Realtime Database for instant data storage and synchronization. It features a clean UI for marking workers as Present or Absent, removing inactive workers, and maintaining accurate attendance logs over time. </p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+
+
+          <!-- End Service Item -->
+
+
+
+     <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">F. view <br> 👁️ Attendance Viewer (Viewer App)</a></h4>
+                <p class="description">A companion app for workers and supervisors that provides a transparent view of attendance records and payments. It calculates total workdays, daily rates, and income for each worker across a 14-day cycle. The viewer page also includes an editable rate field, real-time updates, and a simulated payment system to track when each worker has been paid.. </p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- End Service Item -->
+
 
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex">
@@ -424,8 +449,8 @@ My journey began with a love for coding and evolved into building tools that mak
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-box-seam-fill"></i></div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Store Managment System</a></h4>
-                <p class="description">This project focuses on efficiently managing PlayStation sessions with a time-tracking system, ensuring users maximize their playtime. It keeps count of how many games each player has played, logs total session income, and even calculates a saving percentage to help users track and optimize their spending. With automated timers, vibration alerts, and secure payment tracking, the system enhances the PlayStation experience while helping owners manage their business more effectively. 🚀 </p>
+                <h4 class="title"><a href="#" class="stretched-link">Yoni Store Managment System</a></h4>
+                <p class="description">A web-based inventory tool for storekeepers to easily add, edit, and manage products. It tracks stock levels, logs history with timestamps, and includes a visual dashboard with charts showing total, added, and taken items. Built with HTML, CSS, and JavaScript, using local storage for offline use and a responsive dark/light theme. </p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -612,6 +637,78 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
 
 
 
+
+
+
+
+
+
+
+ <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+<!--
+              <div class="post-img">
+                <img src="assets/img/K.png" alt="" class="img-fluid">
+              </div>
+-->
+
+
+<div id="postCarousel" class="carousel slide post-img" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <a href="assets/img/K.png"> <img src="assets/img/K.png" class="d-block w-100" alt="Image 1"> </a>
+    </div>
+
+    <div class="carousel-item">
+      <a href="assets/img/K1.png">
+      <img src="assets/img/K1.png" class="d-block w-100" alt="Image 2">
+    </a>
+    </div>
+ 
+
+  </div>
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#postCarousel" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#postCarousel" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+
+
+              <p class="title">ESOApp</p>
+
+              <h2 class="post-category">
+                <a href="">A two-part web application designed to simplify workforce management. The Admin App records attendance and manages worker data, while the Viewer App displays each worker’s attendance, daily rate, and total income with real-time payment tracking — all powered by Firebase Realtime Database..</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/5E9A9942.JPG" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Samuel A.</p>
+                  <p class="post-date">
+                    <time datetime="2025-01-10"> November 10, 2025</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+
+          <!-- End post list item -->
+
+
+
+
+
+
+
+
+
+
+
  <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
 <!--
@@ -674,7 +771,7 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
               <p class="title">Sam App🏬</p>
 
               <h2 class="post-category">
-                <a href="">A simple app uesd for download any mobile application that made by Samuel only</a>
+                <a href="Samapp/downloader.html">A simple app uesd for download any mobile application that made by Samuel only</a>
               </h2>
 
 
@@ -906,9 +1003,6 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
 
 
 
-
-
-
  <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article>
 <!--
@@ -993,7 +1087,9 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
               </div>
 
             </article>
-          </div><!-- End post list item -->
+          </div>
+
+          <!-- End post list item 
 
     
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
@@ -1020,7 +1116,11 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
               </div>
 
             </article>
-          </div><!-- End post list item -->
+          </div>
+
+
+
+           End post list item -->
 
         </div><!-- End recent posts list -->
 
@@ -1099,7 +1199,7 @@ Feel free to reach out—I'm always open to new opportunities and collaborations
                 </div>
 
                
-                  <button type="submit">Send Message</button>
+                  <button type="submit" style="background: gray; color: black;">Send Message</button>
                 
 
                </div>
@@ -1166,6 +1266,7 @@ Don't forget to follow me on Linked in and Instagram for more updates and the la
             <li><a href="#">Home</a></li>
               <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#services">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
      
           </ul>
         </div>
